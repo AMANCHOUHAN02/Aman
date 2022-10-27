@@ -1,6 +1,5 @@
 import streamlit as st
 import joblib
-
 model = joblib.load('spam-ham')# we are loading the pipelined model using joblib
 st.title('SPAM-HAM CLASSIFIER')#It creates a title in webapp
 ip = st.text_input('Enter the message')#It creates a text box in the webapp
